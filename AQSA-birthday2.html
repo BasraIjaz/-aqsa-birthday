@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For AQSA 💖</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap');
+  body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  /* PIC BACKGROUND LAG GAYI + UPAR HALKA DARK LAYER */
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('aqsa-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  text-align: center; /* SAB CENTER */
+}
+
+/* SHAADI WALI SPARKLES */
+.sparkle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+.sparkle span {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #fff, 0 0 20px #ffc1e3;
+  animation: twinkle 3s infinite;
+}
+@keyframes twinkle {
+ 0%, 100% { opacity: 0; transform: scale(0); }
+  50% { opacity: 1; transform: scale(1.5); }
+}
+
+/* CONFETTI */
+.confetti {
+  position: fixed;
+  top: -10px;
+  width: 8px;
+  height: 8px;
+  opacity: 0.7;
+  animation: fall 10s linear infinite;
+  z-index: 0;
+}
+@keyframes fall {
+ 0% { transform: translateY(0) rotate(0deg); }
+ 100% { transform: translateY(100vh) rotate(720deg); }
+}
+
+  h1 { 
+    font-family: 'Great Vibes', cursive; 
+    font-size: 70px; 
+    color: #fff; /* WHITE KAR DIYA TAKE PIC PAR NAZAR AAYE */
+    margin-bottom:10px;
+    text-shadow: 0 2px 15px rgba(0,0,0,0.4); /* GLOW */
+    margin-top: 40px;
+  }
+ 
+.subtitle { 
+  color: #fff !important;
+  font-size: 18px !important; 
+  font-weight: 600 !important;
+  letter-spacing: 1.5px !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.subtitle2 { 
+  color: #ffc1e3 !important;
+  font-size: 22px !important; 
+  font-weight: 800 !important;
+  letter-spacing: 2px !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+  .card {
+    background: rgba(255,255,255,0.95); 
+    backdrop-filter: blur(12px);
+    border-radius: 25px; 
+    padding: 30px; 
+    max-width: 500px;
+    margin: 20px auto; 
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    display: none;
+    animation: fadeIn 0.8s ease;
+    border: 1px solid rgba(255,255,255,0.5);
+    font-weight: 600;
+  }
+  @keyframes fadeIn { from{opacity:0; transform:translateY(30px)} to{opacity:1; transform:translateY(0)} }
+
+  .card img {
+    width: 100%; height: 320px; object-fit: cover;
+    border-radius: 20px; margin-bottom: 20px; 
+    border: 3px solid #ffc1e3;
+  }
+
+.card p {
+  color: #c2185b;
+  font-size: 19px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.card p strong {
+  color: #ad1457;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.card p b { 
+  color: #d81b60;
+  font-family: 'Great Vibes', cursive;
+  font-size: 32px;
+  font-weight: 800;
+  display: block;
+  margin-bottom: 12px;
+}
+
+  .btn { 
+  background: linear-gradient(135deg, #d81b60, #ec407a);
+  color: white !important;
+  font-size: 18px !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 15px 35px !important;
+  border: none !important;
+  border-radius: 50px !important;
+  box-shadow: 0 8px 20px rgba(216,27,96,0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block; /* CENTER KE LIYE */
+  margin: 25px auto !important; /* CENTER KE LIYE */
+}
+
+.btn:hover { 
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(216,27,96,0.6);
+}
+
+  #startBtn { display: block; margin: 25px auto !important; }
+</style>
+</head>
+<body>
+
+<!-- SPARKLES -->
+<div class="sparkle"></div>
+
+<h1>Happy Birthday AQSA!</h1>
+<p class="subtitle">✨Har button pe click karo aur surprise dekho✨👇</p>
+<p class="subtitle2">💖 Merii Pyari Behen AQSA💖</p>
+
+<button class="btn" id="startBtn" onclick="showStep(1)">Start Here 💌</button>
+
+<div class="card" id="step1">
+  <img src="./1.jpg" alt="Photo 1">
+  <p><b>Step 1:</b> Behen ka rishta sab se khaas hota hai.
+Na khoon ka, na dosti ka...<br>dil ka rishta hota hai
+Sisters by birth, friends by choice.<br>Grateful for you every single day🌸
+  <button class="btn" onclick="showStep(2)">Next ➡️</button>
+</div>
+
+<div class="card" id="step2">
+  <img src="./2.jpg" alt="Photo 2">
+  <p><b>Step 2:</b>  Tum meri behen kam, partner in crime zyada ho 😂
+Larna bhi tumse hai aur pyaar bhi tumhi se hai.<br>
+We fight like cats and dogs, but I’d choose you   as my sister in every lifetime. Love you AQSA!
+  <button class="btn" onclick="showStep(3)">Next ➡️</button>
+</div>
+
+<div class="card" id="step3">
+  <img src="./3.jpg" alt="Photo 3">
+  <p><b>Step 3:</b> Hum larte itna hain ke log sochte hain dushman hain 😂<br>
+Par sach ye hai ke tumhare bina 1 din bhi nahi reh sakti 💖
+  <button class="btn" onclick="showStep(4)">Next ➡️</button>
+</div>
+
+<div class="card" id="step4">
+  <img src="./4.jpg" alt="Photo 4">
+  <p><b>Step 4:</b>  Meri shikayaten sirf tumse hain,
+aur meri khushiyan bhi sirf tumse hain 🥺<br>
+You are my built-in best friend and my built-in therapist.   Thanks for putting up with me. I love you so much!
+  <button class="btn" onclick="showStep(5)">Last One ➡️</button>
+</div>
+
+<div class="card" id="step5">
+  <img src="./5.jpg" alt="Photo 5">
+  <p>
+Behen ho to tum jesi, warna na ho 😛 Tum<br>
+meri strength ho <strong>AQSA</strong>! <br><br>
+
+Life is better with my sister in it. <br>
+Even when we’re fighting, I know you’ve got my back ❤️
+</p>
+  <button class="btn" onclick="location.reload()">Dobara Dekho 🔄</button>
+</div>
+
+<script>
+  function showStep(n) {
+    document.getElementById('startBtn').style.display = 'none';
+    for(let i=1; i<=5; i++) {
+      document.getElementById('step'+i).style.display = 'none';
+    }
+    document.getElementById('step'+n).style.display = 'block';
+    window.scrollTo(0,0);
+  }
+
+  // SPARKLES
+  const sparkleContainer = document.querySelector('.sparkle');
+  for(let i=0; i<50; i++){
+    let s = document.createElement('span');
+    s.style.left = Math.random()*100 + 'vw';
+    s.style.top = Math.random()*100 + 'vh';
+    s.style.animationDelay = Math.random()*3 + 's';
+    sparkleContainer.appendChild(s);
+  }
+
+  // CONFETTI
+  const colors = ['#ffc1e3', '#d81b60', '#ffffff', '#ff80ab', '#f48fb1'];
+  for(let i=0; i<30; i++){
+    let c = document.createElement('div');
+    c.className = 'confetti';
+    c.style.left = Math.random()*100 + 'vw';
+    c.style.background = colors[Math.floor(Math.random()*colors.length)];
+    c.style.animationDelay = Math.random()*10 + 's';
+    c.style.transform = `rotate(${Math.random()*360}deg)`;
+    document.body.appendChild(c);
+  }
+</script>
+
+</body>
+</html>
