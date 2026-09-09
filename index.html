@@ -240,6 +240,15 @@ Even when we’re fighting, I know you’ve got my back ❤️
     document.body.appendChild(c);
   }
 </script>
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+  <source src="aqsa-song.mp3" type="audio/mpeg">
+  Your browser does not support audio.
+</audio>
 
+<!-- Play/Pause Button -->
+<button onclick="document.getElementById('bgMusic').play()" style="position:fixed; bottom:20px; right:20px; z-index:999; padding:10px 15px; border-radius:50px; background:#ff69b4; color:white; border:none; font-size:16px;">
+  🎵 Play Music
+</button>
 </body>
 </html>
